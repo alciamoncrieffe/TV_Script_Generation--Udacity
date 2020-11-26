@@ -10,7 +10,20 @@ The project files can be found in our public [GitHub repo](https://github.com/ud
 This way you can stay up to date with any changes we make by pulling the changes to your local repository with git pull.
 
 ### Submission
-The [rubric](https://review.udacity.com/#!/rubrics/2260/view) contains a checklist for steps to build this network.
+Process Step | Criteria
+------------ | -------------
+Pre-processing Data | The function create_lookup_tables create two dictionaries:
+. | Dictionary to go from the words to an id, we'll call vocab_to_int
+. | Dictionary to go from the id to word, we'll call int_to_vocab
+. | The function create_lookup_tables return these dictionaries as a tuple (vocab_to_int, int_to_vocab)
+. | The function token_lookup returns a dict that can correctly tokenizes the provided symbols.
+Batching Data | The function batch_data breaks up word id's into the appropriate sequence lengths, such that only complete sequence lengths are constructed.
+. | In the function batch_data, data is converted into Tensors and formatted with TensorDataset.
+. | Finally, batch_data returns a DataLoader for the batched training data.
+Build the RNN
+RNN Training
+
+
 
 ### Advanced Projects
 After completing this project, try applying what you learned to one of these problems.
