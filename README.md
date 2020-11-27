@@ -20,8 +20,10 @@ Pre-processing Data | The function create_lookup_tables create two dictionaries:
 Batching Data | The function batch_data breaks up word id's into the appropriate sequence lengths, such that only complete sequence lengths are constructed.
 . | In the function batch_data, data is converted into Tensors and formatted with TensorDataset.
 . | Finally, batch_data returns a DataLoader for the batched training data.
-Build the RNN
-RNN Training
+Build the RNN | The RNN class has complete __init__, forward , and init_hidden functions.
+. | The RNN includes at least one LSTM (or GRU) and fully-connected layer.
+. | The RNN must include an LSTM or GRU and at least one fully-connected layer. The LSTM/GRU should be correctly initialized, where relevant.
+RNN Training | 
 
 
 
