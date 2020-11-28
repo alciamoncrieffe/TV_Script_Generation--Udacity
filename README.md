@@ -5,7 +5,9 @@ Deep learning Course Project 3 : Build a neural network to generate the next sce
 ### Introduction
 In this project, you'll generate your own Seinfeld TV scripts using RNNs. You'll be using a Seinfeld dataset of scripts from 9 seasons. The Neural Network you'll build will generate a new, "fake" TV script.
 
-### Getting the project files
+My current version is available in the dlnd_tv_script_generation.ipynb file, which produces recognisably script-like text that could definately be improved upon.
+
+### Getting the original project files
 The project files can be found in our public [GitHub repo](https://github.com/udacity/deep-learning-v2-pytorch), in the project-tv-script-generation folder. You can download the files from there, but it's better to clone the repository to your computer using: git clone https://github.com/udacity/deep-learning-v2-pytorch.git
 This way you can stay up to date with any changes we make by pulling the changes to your local repository with git pull.
 
@@ -32,7 +34,6 @@ RNN Training | Enough epochs to get near a minimum in the training loss, no real
 . | The learning rate shouldn’t be too large because the training algorithm won’t converge. But needs to be large enough that training doesn’t take forever.
 . | The printed loss should decrease during training. The loss should reach a value lower than 3.5.
 . | There is a provided answer that justifies choices about model size, sequence length, and other parameters.
-
 
 
 ### Advanced Projects
